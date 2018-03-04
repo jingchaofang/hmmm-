@@ -4,7 +4,10 @@
   "description": "hmmm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow",
+    "build": "babel src/ -d dist/",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/jingchaofang/hmmm/issues"
   },
-  "homepage": "https://github.com/jingchaofang/hmmm#readme"
+  "homepage": "https://github.com/jingchaofang/hmmm#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.66.0",
+    "flow-remove-types": "^1.2.3"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
 }
